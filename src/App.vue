@@ -1,12 +1,31 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+
+  <HelloWorld/>
 </template>
 
+
+<script>
+import HelloWorld from "@/components/HelloWorld";
+
+
+export default {
+  components:{
+    HelloWorld
+  }
+}
+</script>
 <style lang="scss">
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
